@@ -1,11 +1,12 @@
 import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
+import {View, Text, Button, StyleSheet, Image} from 'react-native';
 
 const TrailMapScreen = () => {
   return (
     <View style={styles.trailMapScreen}>
-      <Text> Trail Map Screen</Text>
-      <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+    
+    <Image source={require('../assets/icons/trailmap.png')} style={styles.inputIcon} resizeMode="contain"/>
+
     </View>
   );
 };
@@ -13,9 +14,8 @@ const TrailMapScreen = () => {
 const styles = StyleSheet.create({
   trailMapScreen: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#8fcbbc',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
   },
 });
 

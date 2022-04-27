@@ -1,21 +1,99 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
-
+import Icon from 'react-native-vector-icons/FontAwesome5';
 const SettingScreen = () => {
   return (
-    <View style={styles.settingScreen}>
-      <Text> Setting Screen</Text>
-      <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+    <View style={styles.title}>
+      <Text style={styles.title}>{"\n"}Edit Profile Information</Text>
+
+      <View style={styles.skiboard}>
+        <Text>{"\n"}Name & Address:</Text>
+        <TextInput placeholder={'Johnny Appleseed'}></TextInput>
+        <TextInput placeholder={"123 main st. Kent Ohio"}></TextInput>
+      </View>
+
+      <View style={styles.heightweight}>
+        <Text>{"\n"}Preferred Sport:</Text>
+        <RadioButtonRN
+          data={[{label: 'Ski'},{label: 'Snowboard'}]}
+          selectedBtn={(e)=>console.log(e)}
+          icon={
+            <Icon name="check-circle"
+            size={25}
+            color='white'
+            ></Icon>
+          }
+        />
+      </View>
+
+      <View style={styles.heightweight}>
+        <Text>Rider Weight and Height</Text>
+
+        <View style={{
+          display: "flex",
+          flexDirection: 'row',
+          justifyContent: 'space-between'
+        }}>
+        <TextInput style={styles.input} placeholder={"Weight (in lbs)"} />
+        <TextInput style={styles.input} placeholder={"Height (in inches)"} />
+
+        </View>
+
+      </View>
+
+
+      <View style={styles.price}>
+        <Text style={{
+          fontSize: 22,
+          fontWeight: 'bold'
+        }}>
+        TOTAL DAYS ON PASS: 17</Text>
+      </View>
+
+     
+
+
     </View>
+
+
+
+
+    
+
+
   );
 };
 
 const styles = StyleSheet.create({
-  settingScreen: {
+  title: {
+    flex: 1,
+    fontSize: 20,
+    fontWeight: 'bold',
+    paddingLeft: 5
+  },
+  skiboard: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#8fcbbc',
+    backgroundColor: 'white',
+  },
+  heightweight: {
+    flex: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'white',
+  },
+  price: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'white',
+  },
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
   },
 });
 
