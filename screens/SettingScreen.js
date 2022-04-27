@@ -18,9 +18,9 @@ const SettingScreen = () => {
           data={[{label: 'Ski'},{label: 'Snowboard'}]}
           selectedBtn={(e)=>console.log(e)}
           icon={
-            <Icon name="check-circle"
+            <Icon name="person-skiing"
             size={25}
-            color='white'
+            color='#001348'
             ></Icon>
           }
         />
