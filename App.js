@@ -23,6 +23,7 @@ import RootStackScreen from './screens/RootStackScreen';
 import {AuthContext} from './components/Context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Weather from './screens/WeatherScreen';
 
 const ProfileStack = createStackNavigator();
 const AboutStack = createStackNavigator();
@@ -275,7 +276,7 @@ const WeatherStackScreen = ({navigation}) => (
     }}>
     <WeatherStack.Screen
       name="Weather"
-      component={WeatherScreen}
+      component={Weather} //WeatherScreen
       options={{
         headerLeft: () => (
           <MaterialIcons.Button

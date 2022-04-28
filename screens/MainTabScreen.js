@@ -234,7 +234,7 @@ const EventStackScreen = ({navigation}) => (
     }}>
     <EventStack.Screen
       name="Events"
-      component={RentalScreen}
+      component={EventScreen}
       options={{
         headerLeft: () => (
           <MaterialIcons.Button

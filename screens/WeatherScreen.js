@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import Geolocation from 'react-native-geolocation-service';
 import Header from '../shared/Header';
 import {
@@ -9,7 +9,7 @@ import {
   PermissionsAndroid,
 } from 'react-native';
 
-export class Weather extends Component {
+class Weather extends Component {
   state = {
     lat: null,
     lon: null,
@@ -65,6 +65,7 @@ export class Weather extends Component {
       this.setState({
         data: data,
       });
+      this.getTemp(data.main.temp);
     }
     console.log('data is available');
   };
@@ -74,6 +75,11 @@ export class Weather extends Component {
     let finalTemp = Math.trunc(value / 100);
     console.log('passed convert');
     return finalTemp;
+  };
+
+  getTemp = () => {
+    //const {data} = this.state;
+    return 85;
   };
 
   render() {
@@ -129,5 +135,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-
 export default Weather;

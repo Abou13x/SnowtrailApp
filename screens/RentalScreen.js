@@ -1,12 +1,106 @@
 import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
+import {View, Text, Button, StyleSheet, ScrollView} from 'react-native';
 
 const RentalScreen = () => {
   return (
-    <View style={styles.rentalScreen}>
-      <Text> Rental Screen</Text>
-      <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
-    </View>
+    <ScrollView contentContainerStyle={{}}>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+      <View style={styles.rentalScreen}>
+        <Text> Rental Screen</Text>
+        <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
+      </View>
+    </ScrollView>
   );
 };
 
