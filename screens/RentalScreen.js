@@ -48,6 +48,7 @@ const RentalScreen = () => {
           fontSize: 22
         }}>
         Total Cost: $89</Text>
+        <Button title="Add to Cart" onPress={() => alert('ADDED TO CART!')} />
       </View>
 
      
