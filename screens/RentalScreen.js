@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Text, Button, StyleSheet, TextInput} from 'react-native';
 import RadioButtonRN from 'radio-buttons-react-native'
 import Icon from 'react-native-vector-icons/FontAwesome5';
-//import { Icon } from 'react-native-paper/lib/typescript/components/Avatar/Avatar';
 
 const RentalScreen = () => {
 
