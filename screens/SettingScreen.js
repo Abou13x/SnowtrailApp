@@ -1,6 +1,9 @@
 import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
+import {View, Text, Button, StyleSheet, TextInput} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import RadioButtonRN from 'radio-buttons-react-native';
+
+
 const SettingScreen = () => {
   return (
     <View style={styles.title}>
@@ -39,15 +42,6 @@ const SettingScreen = () => {
 
         </View>
 
-      </View>
-
-
-      <View style={styles.price}>
-        <Text style={{
-          fontSize: 22,
-          fontWeight: 'bold'
-        }}>
-        TOTAL DAYS ON PASS: 17</Text>
       </View>
 
      
